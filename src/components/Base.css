@@ -1,0 +1,31 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Make sure the body takes the full height of the viewport */
+}
+
+/* Main container */
+.base-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Minimum height is the full viewport height */
+}
+
+/* Main content area */
+.content {
+    flex: 1; /* This allows the content to grow and take available space */
+    padding: 20px; /* Optional: Add some padding to the content */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center the text */
+    width: 100%; /* Make footer full width */
+}

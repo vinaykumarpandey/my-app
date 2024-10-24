@@ -1,0 +1,36 @@
+.footer {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px 0; /* Top and bottom padding */
+    position: relative; /* Positioning */
+    bottom: 0; /* Align at bottom */
+    width: 100%; /* Full width */
+}
+
+.footer .container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center align */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    color: #6c757d; /* Grey text color */
+}
+
+.footer-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    display: inline; /* Inline list items */
+    margin: 0 15px; /* Space between links */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,19 +1,18 @@
-import { Children } from "react"
+import React from "react";
 import CustomNavBar from "./CustomNavBar";
+import Footer from "./Footer";
+import './Base.css'; // Import CSS for styling
 
-const Base = ({title="Welcome to our website", children})=>{
+const Base = ({ title = "Welcome to our website", children }) => {
     return (
-          <div className="container-fluid p-0 m-0" >
-
-              <CustomNavBar/>
-
-
-               {children}
-
-              <h1>This is the footer</h1>
-
-          </div>
-    )
+        <div className="base-container">
+            <CustomNavBar /> {/* Render the navigation bar */}
+            <main className="content">
+                {children} {/* Render the child components */}
+            </main>
+            <Footer /> {/* Render the footer */}
+        </div>
+    );
 }
 
 export default Base;
